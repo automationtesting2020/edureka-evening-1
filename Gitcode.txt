@@ -1,6 +1,9 @@
+When you are working first time in GIT
+
 1) Create a file with name akshat.txt 
 with content hi i am akshat
 
+touch akshat.txt
 
 2) git init   #initialize the git 
 
