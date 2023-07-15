@@ -55,200 +55,22 @@ copy paste the token
 
 you will see the github repo updated 
 
-----------Branching and merging---------
+
+------------Branching------------
+
+git branch branch1
+
+git branch-- Master branch will show
 
 
-Admin@DESKTOP-IRU5H25 MINGW64 /g/Edureka (master)
-$ git status
-On branch master
-Your branch is up to date with 'origin/master'.
+check out from branch
+-------------------------
 
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        .gitignore
-        .gitignore.swp
-        user_logs.txt
+git checkout branch1 
 
-nothing added to commit but untracked files present (use "git add" to track)
+-------Merging------ you are in branch1
 
-Admin@DESKTOP-IRU5H25 MINGW64 /g/Edureka (master)
-$ cat>>.gitignore
-user_logs.txt
-
-Admin@DESKTOP-IRU5H25 MINGW64 /g/Edureka (master)
-$ git status
-On branch master
-Your branch is up to date with 'origin/master'.
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        .gitignore
-        .gitignore.swp
-
-nothing added to commit but untracked files present (use "git add" to track)
-
-Admin@DESKTOP-IRU5H25 MINGW64 /g/Edureka (master)
-$ git branch branch1
-
-Admin@DESKTOP-IRU5H25 MINGW64 /g/Edureka (master)
-$ git check from branch
-git: 'check' is not a git command. See 'git --help'.
-
-The most similar command is
-        checkout
-
-Admin@DESKTOP-IRU5H25 MINGW64 /g/Edureka (master)
-$ git checkout from branch
-error: pathspec 'from' did not match any file(s) known to git
-error: pathspec 'branch' did not match any file(s) known to git
-
-Admin@DESKTOP-IRU5H25 MINGW64 /g/Edureka (master)
-$ git branch1
-git: 'branch1' is not a git command. See 'git --help'.
-
-The most similar command is
-        branch
-
-Admin@DESKTOP-IRU5H25 MINGW64 /g/Edureka (master)
-$ git checkout branch1
-Switched to branch 'branch1'
-
-Admin@DESKTOP-IRU5H25 MINGW64 /g/Edureka (branch1)
-$ touch file1.txt
-
-Admin@DESKTOP-IRU5H25 MINGW64 /g/Edureka (branch1)
-$ git status
-On branch branch1
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        .gitignore
-        .gitignore.swp
-        file1.txt
-
-nothing added to commit but untracked files present (use "git add" to track)
-
-Admin@DESKTOP-IRU5H25 MINGW64 /g/Edureka (branch1)
-$ git commit -m"file1_created in branch1"
-On branch branch1
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        .gitignore
-        .gitignore.swp
-        file1.txt
-
-nothing added to commit but untracked files present (use "git add" to track)
-
-Admin@DESKTOP-IRU5H25 MINGW64 /g/Edureka (branch1)
-$ git add .
-
-Admin@DESKTOP-IRU5H25 MINGW64 /g/Edureka (branch1)
-$ git status
-On branch branch1
-Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
-        new file:   .gitignore
-        new file:   .gitignore.swp
-        new file:   file1.txt
-
-
-Admin@DESKTOP-IRU5H25 MINGW64 /g/Edureka (branch1)
-$ git checkout master
-Switched to branch 'master'
-A       .gitignore
-A       .gitignore.swp
-A       file1.txt
-Your branch is up to date with 'origin/master'.
-
-Admin@DESKTOP-IRU5H25 MINGW64 /g/Edureka (master)
-$ git checkout branch1
-Switched to branch 'branch1'
-A       .gitignore
-A       .gitignore.swp
-A       file1.txt
-
-Admin@DESKTOP-IRU5H25 MINGW64 /g/Edureka (branch1)
-$ git checkout master
-Switched to branch 'master'
-A       .gitignore
-A       .gitignore.swp
-A       file1.txt
-Your branch is up to date with 'origin/master'.
-
-Admin@DESKTOP-IRU5H25 MINGW64 /g/Edureka (master)
-$ git branch branch2
-
-Admin@DESKTOP-IRU5H25 MINGW64 /g/Edureka (master)
-$ git checkout branch2
-Switched to branch 'branch2'
-A       .gitignore
-A       .gitignore.swp
-A       file1.txt
-
-Admin@DESKTOP-IRU5H25 MINGW64 /g/Edureka (branch2)
-$ touch file2.txt
-
-Admin@DESKTOP-IRU5H25 MINGW64 /g/Edureka (branch2)
-$ git add .
-
-Admin@DESKTOP-IRU5H25 MINGW64 /g/Edureka (branch2)
-$ git commit -m"created file2 in branch2 only"
-[branch2 e6fa5bc] created file2 in branch2 only
- 4 files changed, 7 insertions(+)
- create mode 100644 .gitignore
- create mode 100644 .gitignore.swp
- create mode 100644 file1.txt
- create mode 100644 file2.txt
-
-Admin@DESKTOP-IRU5H25 MINGW64 /g/Edureka (branch2)
-$ git status
-On branch branch2
-nothing to commit, working tree clean
-
-Admin@DESKTOP-IRU5H25 MINGW64 /g/Edureka (branch2)
-$ git checkout branch1
-Switched to branch 'branch1'
-
-Admin@DESKTOP-IRU5H25 MINGW64 /g/Edureka (branch1)
-$ git status
-On branch branch1
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        project_logs.txt
-        user_logs.txt
-
-nothing added to commit but untracked files present (use "git add" to track)
-
-Admin@DESKTOP-IRU5H25 MINGW64 /g/Edureka (branch1)
-$ git checkout master
-Switched to branch 'master'
-Your branch is up to date with 'origin/master'.
-
-Admin@DESKTOP-IRU5H25 MINGW64 /g/Edureka (master)
-$ git status
-On branch master
-Your branch is up to date with 'origin/master'.
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        project_logs.txt
-        user_logs.txt
-
-nothing added to commit but untracked files present (use "git add" to track)
-
-Admin@DESKTOP-IRU5H25 MINGW64 /g/Edureka (master)
-$ git checkout branch2
-Switched to branch 'branch2'
-
-Admin@DESKTOP-IRU5H25 MINGW64 /g/Edureka (branch2)
-$ git checkout branch1
-Switched to branch 'branch1'
-
-Admin@DESKTOP-IRU5H25 MINGW64 /g/Edureka (branch1)
-$ git
-
-
-
-
+touch file1.txt
 
 
 
