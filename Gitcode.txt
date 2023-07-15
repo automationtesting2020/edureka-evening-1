@@ -100,7 +100,11 @@ git checkout branch1
 
 -------Merging------ you are in branch1
 
-touch file1.txt
-
-
-
+touch branch1.txt
+git add .
+git status
+git commit -m"Creating file in branch1"
+Admin@DESKTOP-IRU5H25 MINGW64 /g/Edureka (branch1)
+$ git push -u origin branch1
+git checkout branch1
+git checkout master
