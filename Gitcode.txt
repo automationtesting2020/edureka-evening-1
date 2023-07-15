@@ -45,7 +45,7 @@ git diff akshat.txt  #you will see the line which is updated
 20) git push -u origin master 
 
 It will ask for authentication
-
+if it is not showing authentication then go to window credential manager and remove user name and passworf for git hun[see recording video of that]
 go to github.com (login) and in new tab open https://github.com/settings/tokens -> generate token 
 
 copy paste the token
