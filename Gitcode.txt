@@ -56,6 +56,36 @@ copy paste the token
 you will see the github repo updated 
 
 
+---------------git ignore--------------
+
+
+Touch project.log— it will create new file in directory
+
+git status- it will give you message that project_log.txt file is untracked files
+Admin@DESKTOP-IRU5H25 MINGW64 /g/Edureka (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        project_logs.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Add project.txt file in to gitignore and git will not show message saying that file is modified.
+an
+
+touch .gitignore— it will create ignore file in directory and n
+
+vi .gitignore - open file editor in linux
+
+Enter file name which you want git to ignore for commit in below linux editor 
+
+
+git status
+git rm- cached -f project.log
+
 ------------Branching------------
 
 git branch branch1
@@ -71,10 +101,6 @@ git checkout branch1
 -------Merging------ you are in branch1
 
 touch file1.txt
-
-
-
-
 
 
 
